@@ -1,0 +1,13 @@
+{# templates/producto/detalle.html.twig 
+
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Detalle del Producto</h1>
+    <p>ID del Producto: {{ producto.id }}</p>
+    <p>Nombre: {{ producto.nombre }}</p>
+    <!-- Agregar más detalles del producto según tu estructura de datos -->
+
+    <a href="{{ path('listar_productos') }}">Volver a la lista de productos</a>
+{% endblock %}
+#}

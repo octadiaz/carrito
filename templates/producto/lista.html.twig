@@ -1,0 +1,26 @@
+{# templates/lista.html.twig #}
+
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Lista de productos</h1>
+        <div class='contenedor-productos'>
+        {% for producto in productos %}
+        <div class='product'>
+            <img src="{{producto.imagen}}" alt="{{producto.nombre}}">
+            <h2>{{producto.nombre}}</h2>
+            <p class="texto">{{producto.descripcion}}</p>
+            <div class="bot-product">
+                <button class="button-product"> Ver detalles </button>
+                <p class="text-precio">Precio: $</p>
+                <p class="precio"> {{producto.precio}} </p>
+            </div>
+        </div>
+        {% endfor %}
+{% endblock %}
+
+
+
+
+
+

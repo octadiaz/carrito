@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Carrito de Compras{% endblock %}</title>
+    <link rel="stylesheet" href="{{asset('css/estilos.css')}}"
+    {# ...otros encabezados... #}
+</head>
+<body>
+    <div class="header">
+        <h1 class="title">{% block pageTitle %}Carrito de Compras{% endblock %}</h1>
+        <div class="buttons">
+            <button class="button">Ver Orden </button>
+            <button class="button">Salir </button>
+        </div>
+    </div>
+    <div class="content">
+        {% block body %}{% endblock %}
+    </div>
+    {# ...otros elementos... #}
+</body>
+</html>
