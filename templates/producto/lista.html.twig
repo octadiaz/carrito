@@ -1,22 +1,26 @@
-{# templates/lista.html.twig #}
-
 {% extends 'base.html.twig' %}
 
 {% block body %}
     <h1>Lista de productos</h1>
-        <div class='contenedor-productos'>
+    <div class='contenedor-productos'>
         {% for producto in productos %}
-        <div class='product'>
-            <img src="{{producto.imagen}}" alt="{{producto.nombre}}">
-            <h2>{{producto.nombre}}</h2>
-            <p class="texto">{{producto.descripcion}}</p>
-            <div class="bot-product">
-                <button class="button-product"> Ver detalles </button>
-                <p class="text-precio">Precio: $</p>
-                <p class="precio"> {{producto.precio}} </p>
+            <div class='product'>
+                <img src="{{producto.imagen}}" alt="{{producto.nombre}}">
+             <h2>{{producto.nombre}}</h2>
+             <p class="texto">{{producto.descripcion}}</p>
+                <div class="bot-product">
+                    <p class="text-precio">Precio: $</p>
+                    <p class="precio"> {{producto.precio}} </p>
+                     
+                </div>
+                    <a href="{{ path('detalle_productos', {'id': producto.id}) }}" button class="button-product">Ver Detalles</a>
             </div>
-        </div>
+        
         {% endfor %}
+    </div>
+        
+        
+       
 {% endblock %}
 
 

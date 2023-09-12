@@ -13,7 +13,7 @@ public function listarProductos(Almacen $almacen): Response{
     return $this->render('producto/lista.html.twig', ['productos' => $productos]);
 }
 
-/** @Route("/{id}", name="detalle_producto") */
+/** @Route("/productos/{id}", name="detalle_productos") */
 public function detalleProducto($id, Almacen $almacen){
     $productos = $almacen->find($id);
     return $this->render('producto/detalle.html.twig', ['productos' => $productos]);

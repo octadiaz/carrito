@@ -85,6 +85,6 @@ class Almacen
     }
 
     public function find($id){
-        return $this->$productos[$id];
+        return $this->productos[$id];
     }
 }

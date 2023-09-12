@@ -1,13 +1,18 @@
-{# templates/producto/detalle.html.twig 
-
-{% extends 'base.html.twig' %}
+ {% extends 'base.html.twig' %}
 
 {% block body %}
     <h1>Detalle del Producto</h1>
-    <p>ID del Producto: {{ producto.id }}</p>
-    <p>Nombre: {{ producto.nombre }}</p>
-    <!-- Agregar más detalles del producto según tu estructura de datos -->
+    <div class='product'>
+            <img src="{{productos.imagen}}">
+            <h2>{{productos.nombre}}</h2>
+            <p class="texto">{{productos.descripcion}}</p>
+            <div class="bot-product">
+                <button class="button-product"> Ver detalles </button>
+                <p class="text-precio">Precio: $</p>
+                <p class="precio"> {{productos.precio}} </p>
+            </div>
+            <a href="{{ path('listar_productos') }}" button class="button-product">Volver</a>
+        </div>
 
-    <a href="{{ path('listar_productos') }}">Volver a la lista de productos</a>
 {% endblock %}
-#}
+
