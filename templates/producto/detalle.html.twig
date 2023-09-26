@@ -1,18 +1,24 @@
- {% extends 'base.html.twig' %}
+{% extends 'base.html.twig' %}
 
 {% block body %}
-    <h1>Detalle del Producto</h1>
-    <div class='product'>
-            <img src="{{productos.imagen}}">
-            <h2>{{productos.nombre}}</h2>
-            <p class="texto">{{productos.descripcion}}</p>
-            <div class="bot-product">
-                <button class="button-product"> Ver detalles </button>
-                <p class="text-precio">Precio: $</p>
-                <p class="precio"> {{productos.precio}} </p>
-            </div>
-            <a href="{{ path('listar_productos') }}" button class="button-product">Volver</a>
-        </div>
+<h1>Detalle del Producto</h1>
+<div class='product'>
+    <img src="../{{productos.imagen}}">
+    <h2>{{productos.nombre}}</h2>
+    <p class="texto">{{productos.descripcion}}</p>
+    <div class="bot-product">
+        <p class="text-precio">Precio: $</p>
+        <p class="precio"> {{productos.precio}} </p>
+    </div>
+    <form>
+    <label for="cantidad">Cantidad: </label>
+    <input type="number" , id="cantidad" , name="Cantidad" value="1" ,min="1">
+    <div>
+       <button type="submit" class="button-product"> Agregar a la orden </button>
+        <a href="{{ path('listar_productos') }}" button class="button-product">Volver</a>
+    </div>
+    </form>
+</div>
+
 
 {% endblock %}
-

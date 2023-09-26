@@ -4,70 +4,70 @@ namespace App\Negocio;
 class Almacen
 {
     public $productos=[
-        0 => [
+        1 => [
             'id' => 1,
             'nombre' => 'Producto 1',
             'descripcion' => 'Lorem ipsum dolor sit amet',
             'precio' => 101,
             'imagen' => 'images/producto1.jpg',
             ],
-        1 => [
+        2 => [
             'id' => 2,
             'nombre' => 'Producto 2',
             'descripcion' => 'Lorem ipsum dolor sit amet',
             'precio' => 102,
             'imagen' => 'images/producto2.jpg',
             ],
-        2 => [
+        3 => [
             'id' => 3,
             'nombre' => 'Producto 3',
             'descripcion' => 'Lorem ipsum dolor sit amet',
             'precio' => 103,
             'imagen' => 'images/producto3.jpg',
                 ],
-        3 => [
+        4 => [
             'id' => 4,
             'nombre' => 'Producto 4',
             'descripcion' => 'Lorem ipsum dolor sit amet',
             'precio' => 104,
             'imagen' => 'images/producto4.jpg',
             ],
-        4 => [
+        5 => [
             'id' => 5,
             'nombre' => 'Producto 5',
             'descripcion' => 'Lorem ipsum dolor sit amet',
             'precio' => 105,
             'imagen' => 'images/producto5.jpg',
                 ],
-        5 => [
+        6 => [
             'id' => 6,
             'nombre' => 'Producto 6',
             'descripcion' => 'Lorem ipsum dolor sit amet',
             'precio' => 106,
             'imagen' => 'images/producto6.jpg',
             ],
-        6 => [
+        7 => [
             'id' => 7,
             'nombre' => 'Producto 7',
             'descripcion' => 'Lorem ipsum dolor sit amet',
             'precio' => 107,
             'imagen' => 'images/producto7.jpg',
                 ],
-        7 => [
+        8 => [
             'id' => 8,
             'nombre' => 'Producto 8',
             'descripcion' => 'Lorem ipsum dolor sit amet',
             'precio' => 108,
             'imagen' => 'images/producto8.jpg',
             ],
-        8 => [
+        9 => [
             'id' => 9,
             'nombre' => 'Producto 9',
             'descripcion' => 'Lorem ipsum dolor sit amet',
             'precio' => 109,
             'imagen' => 'images/producto9.jpg',
                 ],
-        9 => [
+        10 => [
             'id' => 10,
             'nombre' => 'Producto 10',
             'descripcion' => 'Lorem ipsum dolor sit amet',

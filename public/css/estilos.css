@@ -54,7 +54,11 @@ body{
     padding: 0.7em;
     font-weight: bold;
     margin-right: 0.5em;
+    text-decoration: none;
+    margin-top: 1.5em;
+    cursor: pointer;
 }
+
 
 p{
     max-width: 300px;
